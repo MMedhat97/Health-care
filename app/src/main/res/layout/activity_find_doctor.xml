@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
-    android:background="@drawable/background2">
+    android:background="@drawable/background"
+    tools:context=".FindDoctorActivity">
+
 
     <RelativeLayout
         android:id="@+id/relative_logo"
@@ -34,19 +35,34 @@
             android:layout_toEndOf="@id/tvhealthy"
             />
 
+
+
+
     </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/titlefinddoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Doctors"
+        android:layout_below="@+id/relative_logo"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellowlight"
+        />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/relative_logo"
         android:columnCount="2"
         android:rowCount="3"
-        android:layout_margin="20dp"
-        >
+        android:layout_below="@+id/titlefinddoctor">
+
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardtest"
+            android:id="@+id/familyphysicians"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -64,26 +80,27 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:orientation="vertical"
-                >
-                
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/home"/>
-            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LAP TEST"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:textAlignment="center" />
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/family_physicians"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAMILY PHYSICIANS"
+                    android:textStyle="bold"
+                    android:textColor="@color/yellowlight"
+                    android:textAlignment="center" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/buymedicine"
+            android:id="@+id/dietician"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -99,28 +116,29 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/medicine"/>
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dietician"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="BUY MEDICINE"
+                    android:text="DIETICIAN"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/yellowlight"
                     android:textAlignment="center" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/finddoctor"
+            android:id="@+id/dentist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -136,28 +154,30 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/chat"/>
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dentist"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FIND DOCTOR"
+                    android:text="DENTIST"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/yellowlight"
                     android:textAlignment="center" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/healtharticle"
+            android:id="@+id/surgeon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -173,28 +193,29 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/calendar"/>
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/surgeon"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="HEALTH ARTICLE"
+                    android:text="SURGEON"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/yellowlight"
                     android:textAlignment="center" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/orderdetails"
+            android:id="@+id/cardiologists"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -210,28 +231,29 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/widgets"/>
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cardiologists"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ORDERS DETAILS"
+                    android:text="CARDIOLOGISTS"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/yellowlight"
                     android:textAlignment="center" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/logout"
+            android:id="@+id/backfindoctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -260,9 +282,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LOGOUT"
+                    android:text="BACK"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/yellowlight"
                     android:textAlignment="center" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -270,22 +292,8 @@
 
 
 
+
     </GridLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </RelativeLayout>
