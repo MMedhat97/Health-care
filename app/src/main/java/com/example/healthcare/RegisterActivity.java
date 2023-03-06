@@ -31,7 +31,7 @@ public class RegisterActivity extends AppCompatActivity {
         tvRegAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivities(new Intent[] {new Intent(RegisterActivity.this,LoginActivity.class)});
+                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
             }
         });
 
@@ -52,7 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
                         if (isValid(password)){
                             database.register(username,email,password);
                             Toast.makeText(RegisterActivity.this, "Record Inserted", Toast.LENGTH_SHORT).show();
-                            startActivities(new Intent[]{new Intent(RegisterActivity.this,LoginActivity.class)});
+                            startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
                         }else {
                             Toast.makeText(RegisterActivity.this, "password must contain at least 8 character ,having letter ,digit and special symbols", Toast.LENGTH_SHORT).show();
                         }

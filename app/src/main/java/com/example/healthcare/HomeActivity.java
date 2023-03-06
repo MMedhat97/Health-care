@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.clear();
                 editor.apply();
-                startActivities(new Intent[]{new Intent(HomeActivity.this,LoginActivity.class)});
+                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
 
             }
         });
@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         finddoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivities(new Intent[]{new Intent(HomeActivity.this,FindDoctorActivity.class)});
+                startActivity(new Intent(HomeActivity.this,FindDoctorActivity.class));
             }
         });
 

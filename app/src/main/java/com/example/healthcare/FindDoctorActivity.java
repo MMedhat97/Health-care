@@ -34,6 +34,78 @@ public class FindDoctorActivity extends AppCompatActivity {
                 //startActivities(new Intent[]{new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class)});
             }
         });
+
+
+        CardView dentist=findViewById(R.id.dentist);
+        familyphysician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it =new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
+                it.putExtra("title","Dentist");
+                startActivity(it);
+                //startActivities(new Intent[]{new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class)});
+            }
+        });
+
+        CardView Surgeon=findViewById(R.id.surgeon);
+        familyphysician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it =new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
+                it.putExtra("title","Surgeon");
+                startActivity(it);
+                //startActivities(new Intent[]{new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class)});
+            }
+        });
+
+
+
+        CardView dietician=findViewById(R.id.dietician);
+        familyphysician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it =new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
+                it.putExtra("title","Dietician");
+                startActivity(it);
+                //startActivities(new Intent[]{new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class)});
+            }
+        });
+
+        CardView cardiologists=findViewById(R.id.cardiologists);
+        familyphysician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it =new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
+                it.putExtra("title","CardioLogists");
+                startActivity(it);
+                //startActivities(new Intent[]{new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class)});
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
     }
 }

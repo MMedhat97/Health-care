@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
                         editor.putString("username",username);
                         editor.apply();
 
-                        startActivities(new Intent[]{new Intent(LoginActivity.this,HomeActivity.class)});
+                        startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                     }else {
                         Toast.makeText(LoginActivity.this, "Invalid Username and Password", Toast.LENGTH_SHORT).show();
                     }
@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
         tvLogAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivities(new Intent[]{new Intent(LoginActivity.this, RegisterActivity.class)});
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
 
